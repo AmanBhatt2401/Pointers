@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a=10; //variable a with value 10
+    int *p=&a; //pointer p with address of a
+    cout<<*p<<endl;//dereferencing //value of a 10 
+    
+    int **q=&p; // address of pointer p is stored in pointer q
+    cout<<*q<<endl;//only one time dereferencing is done so address of p will be printed
+    cout<<**q<<endl;//two times dereferencing is done so value at p which is 10
+    return 0;
+}
